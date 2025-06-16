@@ -9,7 +9,7 @@ function greetUser() {
   notifier.notify(
     {
       title: `Hey, ${userInfo.username}`,
-      message: "Thanks for cloning the BlueReminder Repo.\n You will be notified to drink water every 15-20 mins.",
+      message: "Thanks for cloning the BlueReminder Repo.\nYou will be notified to drink water every 15-20 mins.\n-Varun Kulkarni",
       sound: true
     }
   );
@@ -23,7 +23,7 @@ function sendNotification(){
       sound: true
     }
   );
-  const dateTime = `${format(new Date(), 'yyy/MM/dd\tHH:mm:ss')}`;
+  const dateTime = `${format(new Date(), 'yyyy/MM/dd\tHH:mm:ss')}`;
   console.log(`Notification sent: ${dateTime}`);
 };
 
@@ -37,6 +37,7 @@ greetUser();
 
 function scheduleNextNotification() {
   const interval = getRandomTime();
+  console.log(`Next reminder in ${Math.floor(interval / 60000)} minutes`);
   setTimeout(() => {
     sendNotification();
     scheduleNextNotification();
@@ -44,3 +45,8 @@ function scheduleNextNotification() {
 };
 
 scheduleNextNotification();
+
+process.on('SIGINT', () => {
+    console.log('\nBlueReminder stopped. Stay hydrated!!');
+    process.exit();
+});
