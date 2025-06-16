@@ -10,7 +10,8 @@ function greetUser() {
     {
       title: `Hey, ${userInfo.username}`,
       message: "Thanks for cloning the BlueReminder Repo.\nYou will be notified to drink water every 15-20 mins.\n-Varun Kulkarni",
-      sound: true
+      sound: true,
+      appId: "BlueReminder"
     }
   );
 };
@@ -20,7 +21,8 @@ function sendNotification(){
     {
       title: `Hey, ${userInfo.username}`,
       message: "Time to drink some water",
-      sound: true
+      sound: true,
+      appId: "BlueReminder"
     }
   );
   const dateTime = `${format(new Date(), 'yyyy/MM/dd\tHH:mm:ss')}`;
