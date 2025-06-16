@@ -1,0 +1,25 @@
+{
+  "name": "Blue Reminder",
+  "version": "1.0.0",
+  "description": "An app which notifies to drink water every 15 to 20 minutes",
+  "repository": {
+  	"type": "git",
+  	"url": "git@github.com:Varun0856/BlueReminder.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Varun Kulkarni",
+  "license": "ISC",
+  "bugs": {
+  	"url": "https://github.com/Varun0856/BlueReminder/issues"
+  },
+  "homepage": "https://github.com/Varun0856/BlueReminder#readme",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "node-notifier": "^10.0.1",
+    "os": "^0.1.2"
+  }
+}
