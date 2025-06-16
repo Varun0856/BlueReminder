@@ -4,7 +4,7 @@
   "description": "An app which notifies to drink water every 15 to 20 minutes",
   "repository": {
   	"type": "git",
-  	"url": "git@github.com:Varun0856/BlueReminder.git"
+  	"url": "https://github.com/Varun0856/BlueReminder.git"
   },
   "main": "index.js",
   "scripts": {
