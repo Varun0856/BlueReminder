@@ -49,6 +49,8 @@ You will get a greeting notification immediately, and then reminders will pop up
  ```bash
 git pull origin main
 ```
+If you found this helpful, please consider giving it a ⭐ on GitHub.
+It helps more people discover this little hydration buddy!
 
 ## Author
 Made with 💙 by Varun Kulkarni
