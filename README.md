@@ -43,5 +43,12 @@ You will get a greeting notification immediately, and then reminders will pop up
 	- ✅ macOS
 	- ✅ Linux
 
+ ## 🛠️ Bug Fix for Windows Users
+
+ If you cloned BlueReminder earlier and faced issues on **Windows**, please update your local copy by running:
+ ```bash
+git pull origin main
+```
+
 ## Author
 Made with 💙 by Varun Kulkarni
